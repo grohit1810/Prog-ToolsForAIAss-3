@@ -32,8 +32,8 @@ def print_grid(output):
         for grid in (output[key]):
             for element in grid:
                 print(element, end=" ")
-            print("")
-        print("")
+            print()
+        print()
         
 if __name__ == "__main__":
     import doctest
