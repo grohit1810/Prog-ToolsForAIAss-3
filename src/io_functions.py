@@ -36,3 +36,17 @@ def arc_task_json_reader(json_filename):
     train_outputs = [data['train'][i]['output'] for i in range(len(data['train']))]
     test_outputs = [data['test'][i]['output'] for i in range(len(data['test']))]
     
+    return (train_inputs,train_outputs,test_inputs,test_outputs)
+
+def print_grid(output):
+    for key in output:
+        for grid in (output[key]):
+            for element in grid:
+                print(element, end=" ")
+            print()
+        print()
+        
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+    
