@@ -8,7 +8,7 @@ import json
 import pickle
 
 
-def ARCTaskJsonReader(json_filename):
+def arc_task_json_reader(json_filename):
     json_file = open(json_filename)
     data = json.load(json_file)
     

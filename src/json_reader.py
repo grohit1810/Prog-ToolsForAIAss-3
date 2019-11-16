@@ -16,7 +16,7 @@ d["test1"] = data['test'][0]['output']
 
 pickle.dump( d, open( "output_format.pkl", "wb" ) )'''
 
-def ARCTaskJsonReader(json_filename):
+def arc_task_json_reader(json_filename):
     json_file = open(json_filename)
     data = json.load(json_file)
     
