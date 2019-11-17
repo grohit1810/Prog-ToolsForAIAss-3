@@ -10,7 +10,7 @@ from io_functions import arc_task_json_reader, print_grid
 import numpy as np
 
 
-json_filename = "./JsonFiles/08ed6ac7.json"
+#json_filename = "./JsonFiles/08ed6ac7.json"
 
 #the input is python list of lists
 def solve_08ed6ac7_json(input):
@@ -28,14 +28,13 @@ def solve_08ed6ac7_json(input):
                 colour += 1
     return input_np
 
-"""if __name__ == '__main__':
+if __name__ == '__main__':
     
     if len(sys.argv) != 2 :
-        print("Please run the file in this format. --python solution_c8f0f002.py Path_to_c8f0f002.json-- ")
-        sys.exit()
-"""
-    #train_inputs,train_outputs,test_inputs,test_outputs = arc_task_json_reader(sys.argv[1])
-train_inputs,train_outputs,test_inputs,test_outputs = arc_task_json_reader(json_filename)
+        print("Please run the file in this format. --python solution_08ed6ac7.py Path_to_08ed6ac7.json-- ")
+        sys.exit("Exit - Bad File")
+train_inputs,train_outputs,test_inputs,test_outputs = arc_task_json_reader(sys.argv[1])
+#train_inputs,train_outputs,test_inputs,test_outputs = arc_task_json_reader(json_filename)
 print_dict = {}
 for index in range(len(train_inputs)) :
     output = solve_08ed6ac7_json(train_inputs[index])
