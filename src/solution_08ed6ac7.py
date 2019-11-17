@@ -31,7 +31,7 @@ def solve_08ed6ac7_json(input):
 if __name__ == '__main__':
     
     if len(sys.argv) != 2 :
-        print("Please run the file in this format. --python solution_08ed6ac7.py Path_to_08ed6ac7.json-- ")
+        print("Please run the file in this format. --python solution_08ed6ac7.py ./JsonFiles/08ed6ac7.json-- ")
         sys.exit("Exit - Bad File")
 train_inputs,train_outputs,test_inputs,test_outputs = arc_task_json_reader(sys.argv[1])
 #train_inputs,train_outputs,test_inputs,test_outputs = arc_task_json_reader(json_filename)
