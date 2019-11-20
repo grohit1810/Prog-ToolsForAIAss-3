@@ -12,10 +12,7 @@ from output import print_grid
 #the input is python list of lists
 def solve_68b16354_json(input):
     
-    result_list = []
-    for li in input:
-        result_list.insert(0,li)
-    return result_list
+    return input[::-1]
 
 if __name__ == '__main__':
     
