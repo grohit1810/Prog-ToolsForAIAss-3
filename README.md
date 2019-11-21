@@ -2,10 +2,15 @@
 Repository Details
 **************************************************************************************
 University: NUI Galway
+
 Course: MSc - AI
+
 Module: Programming and Tools for AI (CT5132/CT5148)
+
 Assignment No: 03
+
 Assigment Description: Hand-coding solutions for the Abstraction and Reasoning Corpus
+
 Students: Mani V S, Rohit G
 **************************************************************************************
 The Abstraction and Reasoning Corpus (ARC) of Chollet is an interesting new benchmark for AI research.
