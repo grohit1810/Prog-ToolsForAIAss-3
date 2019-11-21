@@ -11,26 +11,15 @@ from output import print_grid
 
 #the input is python list of lists
 def solve_68b16354_json(input):
-    
     return input[::-1]
 
 if __name__ == '__main__':
-    
     if len(sys.argv) != 2 :
         print("Please run the file in this format. --python solution_68b16354.py Path_to_68b16354.json-- ")
         sys.exit()
 
     train_inputs,train_outputs,test_inputs,test_outputs = arc_task_json_reader(sys.argv[1])
     print_dict = {}
-    '''
-    print_dict['test1'] = test_inputs[0]
-    print_dict['test12'] = test_outputs[0]
-    print_dict['test13'] = train_inputs[0]
-    print_dict['test14'] = train_outputs[0]
-    print_dict['test134'] = train_inputs[0]
-    print_dict['test145'] = train_outputs[0]
-    '''
-
     for index in range(len(train_inputs)) :
         output = solve_68b16354_json(train_inputs[index])
         print_dict['TRAIN'+str(index)] = output
