@@ -12,11 +12,12 @@ from output import print_grid
 #the input is python list of lists
 def solve_3af2c5a8_json(input):
     #actual+column_wise_reverse
-    #row_wise_reverse+
+    #row_wise_reverse+column_wise_row_wise_reverse
     row_wise_reverse = input[::-1]
     column_wise_reverse = [row[::-1] for row in input]
     column_wise_row_wise_reverse = [row[::-1] for row in row_wise_reverse]
     output = list(zip((input+column_wise_reverse),(row_wise_reverse+column_wise_row_wise_reverse)))
+    output = [list(i+j) for i,j in output]
     return output
 if __name__ == '__main__':
     if len(sys.argv) != 2 :
@@ -27,14 +28,10 @@ if __name__ == '__main__':
     print_dict = {}
     for index in range(len(train_inputs)) :
         output = solve_3af2c5a8_json(train_inputs[index])
-        #print_dict['TRAIN'+str(index)] = output
-        print_dict['TRAIN1'+str(index)] = train_inputs[index]
-        print_dict['TRAIN2'+str(index)] = train_outputs[index]
+        print_dict['TRAIN'+str(index)] = output
     for index in range(len(test_inputs)) : 
         output = solve_3af2c5a8_json(test_inputs[index])
-        #print_dict['TEST'+str(index)] = output
-        print_dict['TRAIN11'+str(index)] = test_inputs[index]
-        print_dict['TRAIN22'+str(index)] = test_outputs[index]
+        print_dict['TEST'+str(index)] = output
 
     print_grid(print_dict)
     
