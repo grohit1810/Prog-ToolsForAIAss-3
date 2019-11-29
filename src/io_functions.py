@@ -24,10 +24,8 @@ Function print_grid will print the output of the solver to terminal
 
 """
 import json
-import pickle
 
-
-def arc_task_json_reader(json_filename):
+def json_reader(json_filename):
     json_file = open(json_filename)
     data = json.load(json_file)
     
