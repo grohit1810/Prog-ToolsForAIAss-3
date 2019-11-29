@@ -25,7 +25,7 @@ Function print_grid will print the output of the solver to terminal
 """
 import json
 
-def json_reader(json_filename):
+def arc_json_reader(json_filename):
     json_file = open(json_filename)
     data = json.load(json_file)
     
