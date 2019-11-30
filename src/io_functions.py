@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 16 18:44:21 2019
 
-@author: 19233292
+@author: 19233292, G Rohit
 @author: 19232668, Mani Vegupatti
 
 Function print_grid will print the output of the solver to terminal
