@@ -30,7 +30,7 @@ def solve_3af2c5a8(input):
     #Reverse the row-wise reversed input(list of list). The reverse performed is a column-wise reverse 
     column_wise_row_wise_reverse = [row[::-1] for row in row_wise_reverse]
     #use zip to combine the input with the three reverse list calculated above
-    output = list(zip((input+column_wise_reverse),(row_wise_reverse+column_wise_row_wise_reverse)))
+    output = list(zip((input+row_wise_reverse),(column_wise_reverse+column_wise_row_wise_reverse)))
     #this done to convert tuple to list, as zip returns a tuple.
     output = [list(i+j) for i,j in output]
     return output
