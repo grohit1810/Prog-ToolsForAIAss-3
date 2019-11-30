@@ -16,7 +16,7 @@ import numpy as np
 def solve_08ed6ac7(input_data):
     """Solver for input data of jason file 08ed6ac7.
     
-    Solves the ARC task as per perceived logic
+    Solves the ARC task 08ed6ac7 as per perceived logic
     Arguments:
     input_data - Numpy ND array of input data
     Output:
