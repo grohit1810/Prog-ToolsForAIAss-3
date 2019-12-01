@@ -21,16 +21,18 @@ def solve_3af2c5a8(input):
     Output:
     output_data - python list of lists
     """ 
+    #the solvers considers input as quadrant 2
+    quad2 = input.copy()
     #Reverse the input(list of list). The reverse performed is a row-wise reverse 
     #i.e. postion of each list in the list is reversed. 
-    row_wise_reverse = input[::-1]
+    quad3 = input[::-1]
     #Reverse the input(list of list). The reverse performed is a column-wise reverse 
     #i.e. each list in the list is reversed
-    column_wise_reverse = [row[::-1] for row in input]
+    quad1 = [row[::-1] for row in input]
     #Reverse the row-wise reversed input(list of list). The reverse performed is a column-wise reverse 
-    column_wise_row_wise_reverse = [row[::-1] for row in row_wise_reverse]
+    quad4 = [row[::-1] for row in quad3]
     #use zip to combine the input with the three reverse list calculated above
-    output = list(zip((input+row_wise_reverse),(column_wise_reverse+column_wise_row_wise_reverse)))
+    output = list(zip((quad2+quad3),(quad1+quad4)))
     #this done to convert tuple to list, as zip returns a tuple.
     output = [list(i+j) for i,j in output]
     return output
