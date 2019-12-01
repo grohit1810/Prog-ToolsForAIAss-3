@@ -10,7 +10,7 @@ Created on Sun Nov 17 01:15:56 2019
 """
 
 import sys 
-from io_functions import json_reader, print_grid
+from io_functions import arc_json_reader, print_grid
 import numpy as np
 
 def solve_1cf80156(input_data):
@@ -52,7 +52,7 @@ def workflow(file_path):
     """
     
     # Read input data from json and split into train, test input and outputs
-    train_inputs,train_outputs,test_inputs,test_outputs = json_reader(sys.argv[1])
+    train_inputs,train_outputs,test_inputs,test_outputs = arc_json_reader(sys.argv[1])
     # Initialize the output dictionary
     dict_output = {}
     # Loop the train data and send single grid of input to solver
