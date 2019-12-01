@@ -23,7 +23,7 @@ def solve_1cf80156(input_data):
     output_data - Numpy ND array of solved output
     """ 
     
-    # Get bollean array by checking value 0 across columns(axis=1)
+    # Get boolean array by checking value 0 across columns(axis=1)
     # We get rows with all Zeros as True
     row_arr= np.all(input_data==0, axis=1)
     # Get an array with index_number(of rows), where non-zero value exists
